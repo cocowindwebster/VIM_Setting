@@ -1,0 +1,122 @@
+set nocompatible              " required
+set backspace=2               " enable backspace deletion in insertion mode 
+set nu
+set hlsearch
+set incsearch
+
+set iskeyword+=.
+set termencoding=utf-8
+set encoding=utf-8
+set fileencodings=utf8,ucs-bom,gbk,cp936,gb2312,gb18030
+set clipboard=unnamed
+set background=dark
+set cul  "highlight the row of the current cursor
+set cuc "highlight the colon of the current cursor
+set ruler
+syntax on 
+filetype off                  " required
+"hi comment ctermfg=red
+" hid pyc files
+
+let NERDTreeIgnore=['\.pyc$', '\~$'] "ignore files in NERDTree
+"colorscheme codeschool 
+color ron
+
+set nocompatible              " be iMproved, required
+filetype off                  " required
+
+
+"python补全
+let g:pydiction_location = '~/.vim/after/complete-dict'
+let g:pydiction_menu_height = 20
+let Tlist_Ctags_Cmd='/usr/local/bin/ctags'
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplMapWindowNavArrows = 1
+let g:miniBufExplMapCTabSwitchBufs = 1
+let g:miniBufExplModSelTarget = 1
+
+
+au FileType php setlocal dict+=~/.vim/dict/php_funclist.dict
+au FileType css setlocal dict+=~/.vim/dict/css.dict
+au FileType c setlocal dict+=~/.vim/dict/c.dict
+au FileType cpp setlocal dict+=~/.vim/dict/cpp.dict
+au FileType scale setlocal dict+=~/.vim/dict/scale.dict
+au FileType javascript setlocal dict+=~/.vim/dict/javascript.dict
+au FileType html setlocal dict+=~/.vim/dict/javascript.dict
+au FileType html setlocal dict+=~/.vim/dict/css.dict
+
+
+let Tlist_Ctags_Cmd = '/usr/local/bin/ctags' 
+let Tlist_Show_One_File = 1 "不同时显示多个文件的tag，只显示当前文件的 
+let Tlist_File_Fold_Auto_Close = 1
+let Tlist_Exit_OnlyWindow = 1 "如果taglist窗口是最后一个窗口，则退出vim 
+let Tlist_Use_Right_Window = 1 "在右侧窗口中显示taglist窗口
+" minibufexpl插件的一般设置
+let g:miniBufExplMapWindowNavVim = 1
+let g:miniBufExplMapWindowNavArrows = 1
+let g:miniBufExplMapCTabSwitchBufs = 1
+let g:miniBufExplModSelTarget = 1  
+let NERDTreeIgnore=['\.pyc']
+
+
+"set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+" call vundle#begin('~/some/path/here')
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+Plugin 'tmhedberg/SimpylFold'
+Plugin 'vim-scripts/indentpython.vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'nvie/vim-flake8'
+Plugin 'jnurmine/Zenburn'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+" Add all your plugins here 
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+
+
+nnoremap <space> za
+nmap tl :Tlist<cr>
+
+" idention for python file
+" au BufNewFile,BufRead *.py
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set textwidth=79
+set expandtab
+set autoindent
+set foldmethod=indent
+set foldlevel=99
+set fileformat=unix
+
+" indentaion for other files
+" au BufNewFile,BufRead *.js, *.html, *.css
+ set tabstop=2
+ set softtabstop=2
+ set shiftwidth=2
+
+" remove unnecessary spaces
+" au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+vnoremap <C-c> "*y<CR><CR>
+
+
+" -----begin snippet ------
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsSnippetDirectories=['UltiSnips']
+let g:UltiSnipsSnippetsDir = '~/.vim/bundle/'
+let g:UltiSnipsUsePythonVersion = 2
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsListSnippets = '<C-Tab>'
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsEditSplit="vertical"
+" -----end snippet ------
