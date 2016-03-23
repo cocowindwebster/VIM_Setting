@@ -1,0 +1,15 @@
+alias vi='/usr/local/Cellar/vim/7.4.1468/bin/vim'
+alias ll='ls -l -G'
+alias ll='ls -l -G'
+alias ll='ls -l -G'
+alias la='ls -al -G'
+alias lrt='ls -lrt'
+alias rm='rm -i'
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias now='date +"%T"'
+alias nowtime=now
+alias nowdate='date +"%d-%m-%Y"'
+ 
+ 

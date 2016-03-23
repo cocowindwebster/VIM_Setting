@@ -1,0 +1,411 @@
+#arsenic
+host ar_provo
+    hostname 10.240.134.132
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ar_sandy
+    hostname 10.240.134.133
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ar_orem
+    hostname 10.240.134.134
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ar_ogden
+    hostname 10.240.134.135
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ar_layton
+    hostname 10.240.134.136
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ar_logan
+    hostname 10.240.134.137
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ar_lehi
+    hostname 10.240.134.138
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ar_murray
+    hostname 10.240.134.139
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ar_boston
+    hostname 10.240.134.140
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ar_chicago
+    hostname 10.240.134.141
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ar_houston
+    hostname 10.240.134.142
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ar_phoenix
+    hostname 10.240.134.143
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ar_dallas
+    hostname 10.240.134.144
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ar_detroit
+    hostname 10.240.134.145
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ar_columbus
+    hostname 10.240.134.146
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ar_austin
+    hostname 10.240.134.147
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ar_memphis
+    hostname 10.240.134.148
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ar_seattle
+    hostname 10.240.134.149
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ar_denver
+    hostname 10.240.134.150
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ar_portland
+    hostname 10.240.134.151
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ar_tucson
+    hostname 10.240.134.152
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ar_atlanta
+    hostname 10.240.134.153
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ar_fresno
+    hostname 10.240.134.154
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ar_mesa
+    hostname 10.240.134.155
+    User emc
+    IdentityFile ~/.ssh/cc_key
+
+
+#pistachio 
+host pi_provo
+    hostname 10.240.117.68
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host pi_sandy
+    hostname 10.240.117.69
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host pi_orem
+    hostname 10.240.117.70
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host pi_ogden
+    hostname 10.240.117.71
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host pi_layton
+    hostname 10.240.117.72
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host pi_logan
+    hostname 10.240.117.73
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host pi_lehi
+    hostname 10.240.117.74
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host pi_murray
+    hostname 10.240.117.75
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host pi_boston
+    hostname 10.240.117.76
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host pi_chicago
+    hostname 10.240.117.77
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host pi_houston
+    hostname 10.240.117.78
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host pi_phoenix
+    hostname 10.240.117.79
+    User emc
+    IdentityFile ~/.ssh/cc_key
+
+#cream
+host cr_provo
+    hostname 10.240.118.4
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host cr_sandy
+    hostname 10.240.118.5
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host cr_orem
+    hostname 10.240.118.6
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host cr_ogden
+    hostname 10.240.118.7
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host cr_layton
+    hostname 10.240.118.8
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host cr_logan
+    hostname 10.240.118.9
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host cr_lehi
+    hostname 10.240.118.10
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host cr_murray
+    hostname 10.240.118.11
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host cr_boston
+    hostname 10.240.118.12
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host cr_chicago
+    hostname 10.240.118.13
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host cr_houston
+    hostname 10.240.118.14
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host cr_phoenix
+    hostname 10.240.118.15
+    User emc
+    IdentityFile ~/.ssh/cc_key
+ 
+# Build. CI and Registry Servers
+# RPM & Image Building, Docker Registry.
+host build_chicago
+    hostname 10.249.231.192
+    User emc
+    IdentityFile ~/.ssh/cc_key
+# Jenkins Master
+host build_houston
+    hostname 10.249.231.193
+    User emc
+    IdentityFile ~/.ssh/cc_key
+# Jenkins Slave
+host build_phoenix
+    hostname 10.249.231.184
+    User emc
+    IdentityFile ~/.ssh/cc_key
+ 
+# Cumulus Servers
+host cum_061
+    hostname 10.249.231.61
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host cum_062
+    hostname 10.249.231.62
+    User emc
+    IdentityFile ~/.ssh/cc_key
+# Jenkins Slave __CAUTION___ #
+host cum_064
+    hostname 10.249.231.64
+    User emc
+    IdentityFile ~/.ssh/cc_key
+
+#brick cluster
+host br_provo
+    hostname 10.242.35.4
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host br_sandy
+    hostname 10.242.35.5
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host br_orem
+    hostname 10.242.35.6
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host br_ogden
+    hostname 10.242.35.7
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host br_layton
+    hostname 10.242.35.8
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host br_logan
+    hostname 10.242.35.9
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host br_lehi
+    hostname 10.242.35.10
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host br_murray
+    hostname 10.242.35.11
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host br_boston
+    hostname 10.242.35.12
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host br_chicago
+    hostname 10.242.35.13
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host br_houston
+    hostname 10.242.35.14
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host br_phoenix
+    hostname 10.242.35.15
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host br_dallas
+    hostname 10.242.35.16
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host br_detroit
+    hostname 10.242.35.17
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host br_columbus
+    hostname 10.242.35.18
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host br_austin
+    hostname 10.242.35.19
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host br_memphis
+    hostname 10.242.35.20
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host br_seattle
+    hostname 10.242.35.21
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host br_denver
+    hostname 10.242.35.22
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host br_portland
+    hostname 10.242.35.23
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host br_tucson
+    hostname 10.242.35.24
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host br_atlanta
+    hostname 10.242.35.25
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host br_fresno
+    hostname 10.242.35.26
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host br_mesa
+    hostname 10.242.35.27
+    User emc
+    IdentityFile ~/.ssh/cc_key
+
+#citron-1 
+#
+#citron-2 
+host ci_provo
+    hostname 10.242.35.138
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ci_sandy
+    hostname 10.242.35.139
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ci_orem
+    hostname 10.242.35.140
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ci_ogden
+    hostname 10.242.35.141
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ci_layton
+    hostname 10.242.35.142
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ci_logan
+    hostname 10.242.35.143
+    User emc
+    IdentityFile ~/.ssh/cc_key
+
+
+
+#citron-3 
+host ci_dallas
+    hostname 10.242.35.144
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ci_detroit
+    hostname 10.242.35.145
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ci_columbus
+    hostname 10.242.35.146
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ci_austin
+    hostname 10.242.35.147
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ci_memphis
+    hostname 10.242.35.148
+    User emc
+    IdentityFile ~/.ssh/cc_key
+host ci_seattle
+    hostname 10.242.35.149
+    User emc
+    IdentityFile ~/.ssh/cc_key
+
+
+#citron-3-root 
+host ci_dallas_root
+    hostname 10.242.35.144
+    User root
+    IdentityFile ~/.ssh/cc_key
+host ci_detroit_root
+    hostname 10.242.35.145
+    User root
+    IdentityFile ~/.ssh/cc_key
+host ci_columbus_root
+    hostname 10.242.35.146
+    User root
+    IdentityFile ~/.ssh/cc_key
+host ci_austin_root
+    hostname 10.242.35.147
+    User root
+    IdentityFile ~/.ssh/cc_key
+host ci_memphis_root
+    hostname 10.242.35.148
+    User root
+    IdentityFile ~/.ssh/cc_key
+host ci_seattle_root
+    hostname 10.242.35.149
+    User root
+    IdentityFile ~/.ssh/cc_key
